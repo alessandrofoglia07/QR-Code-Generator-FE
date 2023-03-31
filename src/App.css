@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.paper {
+    width: 30svw;
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    min-height: 500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.qrCode {
+    height: 50vh;
+    width: 50vh;
+    position: relative;
+    z-index: -1;
+    place-self: center;
+    top: 8vh;
+    max-width: calc(30vh - 1.5em);
+    max-height: calc(30vh - 1.5em);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.poppinsFont {
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.paperZone {
+    width: 30svw;
+    width: 30vw;
+    height: 70vh;
+    position: relative;
+    max-height: 70vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 1000px) {
+    .paper {
+        width: 90vw;
+        height: 90vh;
+        min-height: 600px;
+    }
+    .paperZone {
+        width: 90vw;
+        height: 90vh;
+    }
+    .qrCode {
+        height: 70vh;
+        width: 70vh;
+        max-width: calc(40vh - 1.5em);
+        max-height: calc(40vh - 1.5em);
+        min-width: 300px;
+        min-height: 300px;
+    }
 }
